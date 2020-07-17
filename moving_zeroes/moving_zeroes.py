@@ -3,9 +3,28 @@ Input: a List of integers
 Returns: a List of integers
 '''
 def moving_zeroes(arr):
-    # Your code here
+    
+    count = 0
+    rslt_arr = [0]*len(arr)
+    for i in range(0, len(arr)):
+        if arr[i] != 0:            
+            rslt_arr[count] = arr[i]
+            count += 1
+    
+    return rslt_arr
 
-    pass
+    # count = 0
+    # total = len(arr)   
+    # for i in range(0, total):
+    #     if arr[i] != 0:
+    #         arr[count] = arr[i]
+    #         count += 1
+
+    # while count < total:
+    #     arr[count] = 0
+    #     count += 1    
+    # return arr
+
 
 
 if __name__ == '__main__':
